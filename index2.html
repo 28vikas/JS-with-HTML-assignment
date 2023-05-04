@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- On page show heading week days and 2 button - 1. Load days and 2. Clear days. On clicking Load days display list of week days. And when user click on clear button it should clear the data. - with js -->
+
+    <h1>Week days</h1>
+
+    <button id="show" type="button" onclick="first()">Load days</button>
+    <button id="hide" type="button" onclick="second()">Clear Days</button>
+
+
+    <ul id="weekdays" style="display: none;">
+        <li>Sunday</li>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+    </ul>
+
+
+
+    <script>
+
+        let weekDays = document.getElementById('weekdays')
+
+        function first() {
+            weekDays.style.display = 'block';
+
+        }
+
+
+        function second(){
+            weekDays.style.display = 'none'
+        }
+
+
+    </script>
+
+</body>
+
+</html>

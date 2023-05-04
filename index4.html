@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+
+<body>
+
+        <!--4. Create a simple counter with js - there should be + button, - button and reset button.  -->
+
+
+        <h1>counter</h1>
+
+
+
+        <span id="count">0</span><br>
+        <button type="button" onclick="increment()">plus</button>
+        <button type="button" onclick="decrement()">minus</button>
+        <button type="button" onclick="reset()">reset</button>
+
+
+
+        <script>
+
+                let count = 0;
+                let value = document.getElementById('count');
+
+                function increment() {
+
+                        count++;
+                        value.innerText = count
+                }
+
+
+                function decrement() {
+                        if (count > 0) {
+                                count--
+                                value.innerText = count
+                        }
+
+                }
+
+                function reset() {
+                        count = 0
+                        value.innerText = count
+                }
+
+
+        </script>
+
+
+
+
+
+
+</body>
+
+</html>

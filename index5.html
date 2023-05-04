@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 5. Create a form which have first name, last name, age and submit button when clicking on the submit btn it should display the typed first name , last name and age at bottom. -->
+
+    <h1>students form</h1>
+
+    <label for="">Name</label>
+    <input type="text" id="firstname" placeholder="first name">
+    <input type="text" id="lastname" placeholder="last name">
+    <input type="text" id="age" placeholder="your age">
+    <button type="button" onclick="details()">Submmit</button>
+
+    <h2 id="answer"></h2>
+
+
+
+    <script>
+
+
+
+        function details() {
+            
+            let fname = document.getElementById('firstname').value;
+            let lname = document.getElementById('lastname').value;
+            let age = document.getElementById('age').value;
+
+            document.getElementById('answer').innerHTML = 'first name : ' + fname + '<br>'+ 'last name :' + lname + '<br>' + ' age : ' + age;
+
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
